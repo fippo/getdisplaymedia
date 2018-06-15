@@ -30,17 +30,14 @@ module.exports = {
                 }
                 return chromeCallback.then(function(sourceId) {
                     // TODO: empty sourceId means user aborted. Throw an error.
+                    // TODO: evaluate given constraints first.
                     constraints = {video: {mandatory: {
                         chromeMediaSource: 'desktop';
                         maxWidth: window.screen.width,
                         maxHeight: window.screen.height,
                         maxFrameRate: 3
                     }}};
-                    return navigator.mediaDevices.getUserMedia({
-                            mandatory: {
-                                chromeMediaSource: 'desktop',
-                            }
-                    });
+                    return navigator.mediaDevices.getUserMedia(constraints);
                 });
             }
         }
