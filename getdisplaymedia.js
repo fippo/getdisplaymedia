@@ -32,7 +32,8 @@ module.exports = {
                     // TODO: empty sourceId means user aborted. Throw an error.
                     // TODO: evaluate given constraints first.
                     constraints = {video: {mandatory: {
-                        chromeMediaSource: 'desktop';
+                        chromeMediaSource: 'desktop',
+                        chromeMediaSourceId: sourceId,
                         maxWidth: window.screen.width,
                         maxHeight: window.screen.height,
                         maxFrameRate: 3
