@@ -1,0 +1,15 @@
+{
+  "name": "getdisplaymedia",
+  "version": "0.0.1",
+  "description": "A somewhat opionated polyfill for getDisplayMedia",
+  "main": "getdisplaymedia.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fippo/getDisplayMedia"
+  },
+  "author": "Philipp Hancke <fippo@andyet.net>",
+  "license": "MIT",
+  "peerDependencies": {
+    "webrtc-adapter": "^6.0.0"
+  }
+}
